@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.catalogue-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.portfolio-list {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.project-section {
+    padding-left: 20px;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.project-name a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+/* Styles for project.html */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    padding: 10px 15px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.back-button:hover {
+    background-color: #ccc;
+}
+
+.project-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.project-media-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-media-collage img,
+.project-media-collage video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-media-collage img:nth-child(3n+1) {
+    grid-row: span 2;
+}
+
+.project-media-collage img:nth-child(5n+2) {
+    grid-column: span 2;
+}
+
+.project-media-collage video {
+    grid-column: 1 / -1;
+}

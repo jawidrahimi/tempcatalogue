@@ -1,0 +1,27 @@
+.project-media-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust min width as needed */
+    gap: 10px;
+    padding: 20px;
+}
+
+.project-media-collage img,
+.project-media-collage video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Example of varying sizes - you can get creative with grid-row-span and grid-column-span */
+.project-media-collage img:nth-child(3n+1) {
+    grid-row: span 2;
+}
+
+.project-media-collage img:nth-child(5n+2) {
+    grid-column: span 2;
+}
+
+.project-media-collage video {
+    grid-column: 1 / -1; /* Make videos span the full width */
+}
